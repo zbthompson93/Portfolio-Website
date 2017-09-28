@@ -1,0 +1,196 @@
+html, body {
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+	box-sizing: border-box;
+	color: white;
+	background-color: rgb(138, 43, 226);
+}
+
+/* Header */
+.head-home {
+	background-image: url("../images/red-green-chile.jpg");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+.header-text {
+	position: relative;
+	top: 40%;
+}
+
+.head-title-1 {
+  color: cyan;
+  font-size: 60px;
+  font-family: Acme;
+}
+
+.head-sub-title {
+	font-family: Acme;
+	color: cyan;
+}
+
+/* Introduction Section*/
+#intro-para {
+  font-size: 130%;
+}
+#intro-title{
+  color: cyan;
+  font-size: 50px;
+  font-family: Acme;
+}
+#self-portrait {
+  border-style: solid;
+  border-color: cyan;
+  border-radius: 15px;
+  margin: 10px;
+  max-width: 140px;
+  min-width: 90px;
+}
+.purp-background1 {
+  background-color: rgb(153,70,255);
+  width: 100%;
+  margin:50px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 700px) {
+	#intro-para {
+		font-size:110%
+	}
+	
+	.gogo {
+		position: relative;
+		left: 10%;
+	}
+	
+}
+
+/* Portfolio Section */
+#portImage {
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+}
+
+#caption {
+  /*color: cyan;*/
+  background-color: rgb(138, 43, 226);
+  /*font-size: 20px;*/
+  border-radius: 0px 0px 5px 5px;
+  margin: 0px 0px 20px 0px;
+}
+
+.caption-header {
+	color: cyan;
+}
+
+/* Resume Section */
+.resume-headers {
+	font-family: Acme;
+	color: cyan;
+	cursor: pointer;
+}
+
+hr {
+	border-color: cyan;
+	background-color: white;
+}
+
+.info-button:hover {
+	color: #333;
+}
+
+.resume-link {
+	color: cyan;
+	font-family: Acme;
+}
+
+.resume-link:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Contact Section */
+.contact-info {
+  background-color: #333;
+  width: 100%;
+  padding: 10px;
+  margin: 50px 0px 0px 0px;
+}
+
+.profile-btns {
+	position: relative;
+	left: 35%;
+}
+
+.contact-title{
+  color: cyan;
+  font-family: Acme;
+}
+
+#contact-section ul {
+  list-style-type: none;
+} 
+
+#contact-section ul li {
+  display: inline;
+}
+
+.fa {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 100%;
+  border-radius: 50%;
+  padding: 11px 0px;
+}
+
+.fa:hover {
+	color: rgb(153, 51, 255);
+}
+
+.fa-envelope {
+  background: #333;
+  color: cyan;
+  border-style: solid;
+  border-color: cyan;
+  font-size: 150%;
+}
+
+.fa-linkedin {
+  background: #333;
+  color: cyan;
+  border-style: solid;
+  border-color: cyan;
+  font-size: 150%;
+}
+
+.fa-github {
+  background: #333;
+  color: cyan;
+  border-style: solid;
+  border-color: cyan;
+  font-size: 150%;
+}
+
+.fa-codepen {
+  background: #333;
+  color: cyan;
+  border-style: solid;
+  border-color: cyan;
+  font-size: 150%;
+}
+
+.fa-free-code-camp {
+  background: #333;
+  color: cyan;
+  border-style: solid;
+  border-color: cyan;
+  font-size: 150%;
+}
+
