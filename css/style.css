@@ -27,6 +27,7 @@ body {
 
 .head-title-1 {
   color: cyan;
+  text-shadow: 4px 4px 4px black;
   font-size: 60px;
   font-family: Acme;
 }
@@ -34,7 +35,14 @@ body {
 .head-sub-title {
 	font-family: Acme;
 	color: cyan;
+  text-shadow: 4px 4px 4px black;
 }
+/*
+.scroll {
+  padding-top: 200px;
+  font-family: Acme;
+	color: cyan;
+}*/
 
 /* Introduction Section*/
 #intro-para {
@@ -57,18 +65,19 @@ body {
   background-color: rgb(153,70,255);
   width: 100%;
   margin:50px 0px 0px 0px;
+  box-shadow: 10px 10px 5px #333;
 }
 
 @media only screen and (max-width: 700px) {
 	#intro-para {
 		font-size:110%
 	}
-	
+
 	.gogo {
 		position: relative;
 		left: 10%;
 	}
-	
+
 }
 
 /* Portfolio Section */
@@ -135,7 +144,7 @@ hr {
 
 #contact-section ul {
   list-style-type: none;
-} 
+}
 
 #contact-section ul li {
   display: inline;
@@ -193,4 +202,3 @@ hr {
   border-color: cyan;
   font-size: 150%;
 }
-
