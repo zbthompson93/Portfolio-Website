@@ -12,55 +12,55 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript" defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/projectsScroll.js" type="text/javascript" defer></script>
+	<script src="js/menu.js" type="text/javascript" defer></script>
 	<!--script src="js/contactResize.js" type="text/javascript" defer></script-->
 </head>
 
 <body>
 
-<div class="head-home">
-	<div class="header-text text-center">
-		<h1 class="head-title-1"><span>&nbsp;Zachary Thompson&nbsp;</span></h1>
-		<h3 class="head-sub-title">Front-End Web Developer</h3>
-		<!--p class="scroll">Scroll</p-->
-	</div>
-</div>
+<div class="main">
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark navbar-custom" id="menu"><!--navbar-dark bg-dark" id="menu"-->
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto">
-            <!--li class="nav-item">
-                <a class="nav-link" href="#"><strong>Top</strong></a>
-            </li-->
-			<li class="nav-item">
-                <a class="nav-link" href="#intro">Intro</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#resume">Resume</a>
-            </li>
-			<li class="nav-item">
-                <a class="nav-link" href="#contact-section">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+		<div class = "nav">
+      <ul>
+        <li><a href="#" id="ham"><hr style="width: 30px;"><hr><hr><!--svg xmlns="http://www.w3.org/2000/svg"></svg--></a></Li>
+				<li><img id="logo" src="images/zt-logo-1.svg" width = "90px;" style="padding: 14px 30px;"/></li>
+				<li><a href="#intro">Intro</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+		</div>
 
+		<div class = "nav-mobile">
+      <ul style = "display: none;">
+        <li><a href="#intro" onclick="revealMenu()">Intro</a></li>
+        <li><a href="#portfolio" onclick="revealMenu()">Portfolio</a></li>
+        <li><a href="#resume" onclick="revealMenu()">Resume</a></li>
+        <li><a href="#contact-section" onclick="revealMenu()">Contact</a></li>
+      </ul>
+		</div>
+
+		<div class="head-home">
+			<!--img src="images/MKE.jpg" class="head-home" style="float: left;"/-->
+			<div class="header-text text-center">
+				<h1 class="head-title-1">Zachary Thompson</h1>
+				<h3 class="head-sub-title">Front-End Web Developer</h3>
+				<h3 class="head-sub-title">Milwaukee, Wisconsin</h3>
+			</div>
+		</div>
+
+<!--div class="main"--->
 <div class="row" id="intro">
 <div class="col-sm-1"></div>
 <div class="container purp-background1 col-sm-10">
 <div>
-<h1 class="text-center" id="intro-title">Introduction<hr></h1>
+<h1 class="text-center00" id="intro-title">Introduction<!--hr--></h1>
   </div>
   <div class="row" style="padding: 20px 20px 0px 20px">
-    <div class="col-lg-2">
-    <img src="images/zach-3-copy.jpg" id="self-portrait">
+    <div class="col-lg0-2">
+    <!--img src="images/zach-3-copy.jpg" id="self-portrait"-->
     </div>
-    <div class="col-lg-10" id="intro-para">
+    <div class="col-lg0-10" id="intro-para">
   <p>My name is Zachary Thompson and I am from Albuquerque, New Mexico.
   I have a Bachelor's Degree of Science in Mechanical Engineering and a
   Master's of Business Administration from the University of New Mexico.
@@ -87,12 +87,13 @@
 <div class="col-sm-1"></div>
 </div>
 
+<hr class="section-divider">
 
 <div class="row" id="portfolio">
 <div class="col-sm-1"></div>
 <div class="container purp-background1 col-sm-10">
   <div>
-	<h1 id="intro-title" class="text-center">Portfolio<hr></h1>
+	<h1 id="intro-title" class="text-center00">Portfolio<!--hr--></h1>
   </div>
   <div class="row" style="padding: 20px">
     <!--div class="col-lg-6">
@@ -178,11 +179,13 @@
 <div class="col-sm-1"></div>
 </div>
 
+<hr class="section-divider">
+
 <div class="row" id="resume">
 <div class="col-sm-1"></div>
 <div class="container purp-background1 col-sm-10">
 	<div>
-		<h1 id="intro-title" class="text-center">Resume</h1>
+		<h1 id="intro-title" class="text-center00">Resume</h1>
 	</div>
 	<div>
 		<hr>
@@ -301,6 +304,7 @@
 	   </div>
 </div>
 
+</div>
 
 </body>
 

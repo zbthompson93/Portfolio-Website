@@ -6,23 +6,44 @@ html, body {
 
 body {
 	box-sizing: border-box;
-	color: white;
-	background-color: rgb(138, 43, 226);
+	color: black; /*white;*/
+	background-color: #F5F5F5; /*rgb(138, 43, 226);*/
+}
+
+.main {
+  width: 100%;
+  z-index: 2;
 }
 
 /* Header */
 .head-home {
-	background-image: url("../images/red-green-chile.jpg");
+	background-image: url("../images/MKE.jpg");
+  /*filter: blur(2px);*/
 	width: 100%;
-	height: 100%;
+	height: 550px;
+  /*background-attachment: fixed !important;*/
 	background-position: center;
 	background-repeat: no repeat;
 	background-size: cover;
+  z-index: 1;
+}
+
+.head-home:hover {
+  filter: blur(0px);
+}
+
+.head-home000 {
+  /*background-color: #eee9e9;*/
+  background-image: url("../images/sandias.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+  filter: background-blur(2px);
 }
 
 .header-text {
 	position: relative;
-	top: 40%;
+  top: 30%;
 }
 
 .head-title-1 {
@@ -36,6 +57,102 @@ body {
 	font-family: Acme;
 	color: cyan;
   text-shadow: 4px 4px 4px black;
+  /*padding-bottom: 20px;*/
+}
+
+/* Navigation Bar */
+.nav {
+  margin-top: -6px;
+  padding: 0;
+  outline: none;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: /*rgb(138, 43, 226); rgb(153,70,255);*/ #333;
+  width: 100%;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 70px 14px 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: cyan;
+    color: rgb(153,70,255);
+}
+
+/* Hamburger button */
+#ham {
+  display: none;
+  padding: 5px 15px;
+  color: white;
+}
+
+#ham:hover {
+  background-color: rgb(153,70,255);
+}
+
+/* Mobile Navigation bar */
+.nav-mobile {
+  position: sticky;
+  top: 75px;
+  z-index: 9;
+}
+
+.nav-mobile ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-mobile li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav-mobile li a:hover {
+  background-color: cyan;
+  color: rgb(153,70,255);
+}
+
+/* Responsive Modifications */
+@media only screen and (max-width: 1050px) {
+  .nav li a {
+    display: none;
+  }
+
+  #ham {
+    display: block;
+  }
+
+  #logo {
+    width: 110px;
+    position: relative;
+    /*margin: 0px 0px 0px 300px;*/
+  }
+}
+
+#menu {
+  margin-top: 0px;
 }
 
 /* Introduction Section*/
@@ -43,7 +160,7 @@ body {
   font-size: 130%;
 }
 #intro-title{
-  color: cyan;
+  color: rgb(138, 43, 226); /*rgb(153,70,255); /*cyan;*/
   font-size: 50px;
   font-family: Acme;
 }
@@ -56,10 +173,10 @@ body {
   min-width: 90px;
 }
 .purp-background1 {
-  background-color: rgb(153,70,255);
+  background-color: #F5F5F5 /* #333; /*rgb(153,70,255);*/
   width: 100%;
-  margin:50px 0px 0px 0px;
-  box-shadow: 10px 10px 5px #333;
+  margin: 30px 0px 0px 0px;
+  /*box-shadow: 10px 10px 5px rgb(153,70,255); /*#333;*/
 }
 
 @media only screen and (max-width: 700px) {
@@ -100,13 +217,18 @@ body {
 /* Resume Section */
 .resume-headers {
 	font-family: Acme;
-	color: cyan;
+	color: rgb(138, 43, 226); /*cyan;*/
 	cursor: pointer;
 }
 
 hr {
-	border-color: cyan;
+	border-color: #333; /*rgb(153,70,255); /*cyan;*/
 	background-color: white;
+}
+
+.section-divider {
+  border-color: #333;
+  width: 95%;
 }
 
 .info-button:hover {
@@ -114,7 +236,7 @@ hr {
 }
 
 .resume-link {
-	color: cyan;
+	color: rgb(138, 43, 226); /*cyan;*/
 	font-family: Acme;
 }
 
