@@ -103,6 +103,10 @@ body {
   color: white;
 }
 
+#ham hr {
+  border-color: cyan;
+}
+
 #ham:hover {
   background-color: rgb(153,70,255);
 }
@@ -158,19 +162,26 @@ body {
 /* Introduction Section*/
 #intro-para {
   font-size: 130%;
+  float: left;
+  padding: 10px 0px 0px 30px;
 }
 #intro-title{
   color: rgb(138, 43, 226); /*rgb(153,70,255); /*cyan;*/
   font-size: 50px;
   font-family: Acme;
 }
+#row1 {
+  display: inline-block;
+}
 #self-portrait {
-  border-style: solid;
-  border-color: cyan;
-  border-radius: 15px;
+  /*border-style: solid;
+  border-color: #F5F5F5; /*cyan;*/
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px #333;
   margin: 10px;
-  max-width: 140px;
+  max-width: 170px;
   min-width: 90px;
+  float: left;
 }
 .purp-background1 {
   background-color: #F5F5F5 /* #333; /*rgb(153,70,255);*/
