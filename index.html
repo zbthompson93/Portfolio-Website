@@ -28,6 +28,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact-section">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
       </ul>
 		</div>
 
@@ -37,19 +38,19 @@
         <li><a href="#portfolio" onclick="revealMenu()">Portfolio</a></li>
         <li><a href="#resume" onclick="revealMenu()">Resume</a></li>
         <li><a href="#contact-section" onclick="revealMenu()">Contact</a></li>
+				<li><a href="blog.html" onclick="revealMenu()">Blog</a></li>
       </ul>
 		</div>
 
 		<div class="head-home">
-			<!--img src="images/MKE.jpg" class="head-home" style="float: left;"/-->
 			<div class="header-text text-center">
+				<img src="images/selfie.jpg" id="self-portrait" />
 				<h1 class="head-title-1">Zachary Thompson</h1>
-				<h3 class="head-sub-title">Front-End Web Developer</h3>
+				<h3 class="head-sub-title">Front-End Web Developer and<br />Technical Writer</h3>
 				<h3 class="head-sub-title">Milwaukee, Wisconsin</h3>
 			</div>
 		</div>
 
-<!--div class="main"--->
 <div class="row" id="intro">
 <div class="col-sm-1"></div>
 <div class="container purp-background1 col-sm-10">
@@ -59,11 +60,7 @@
   <div class="row00" style="padding: 20px 20px 0px 0px">
 		<div id="row1">
 	    <div class="col-lg0-2" >
-	    	<!--img src="images/zach-3-copy.jpg" id="self-portrait" /-->
-				<img src="images/selfie.jpg" id="self-portrait" />
-				<h1 style="padding: 65px 0px 0px 220px; font-family: Acme;">Hello my name is Zach. Welcome to my website!</h1>
-				<h2 class="text-center">Current Rate: $20.00/hour</h2>
-				<h2 style="padding-left: 420px;">Current Rate: $20.00/hour</h2>
+				<h2 style="font-family: Acme; padding-left: 20px;">Hello my name is Zach. Welcome to my website!</h2>
 	    </div>
 	    <div class="col-lg0-10" id="intro-para">
 				<p>I am a front-end developer and technical writer with skills in:</p>
@@ -77,25 +74,29 @@
 					<li>SEO</li>
 				</ul>
 				<p>
-				I have experience building webpages from scratch using HTML, CSS, JavaScript,
+				I have a range of experience building webpages from scratch using HTML, CSS, JavaScript,
 				Bootstrap and WordPress. I have built multipage websites for clients as well as
-				building several personal projects, which are all posted on <a href="https://github.com/zbthompson93" target="_blank">GitHub</a>. Check out
+				building several personal projects, which are all posted on
+				<a href="https://github.com/zbthompson93" target="_blank">GitHub</a>. Check out
 				my <a href = "#portfolio">porfolio</a> below to see my work!
-
-				With regards to writing, I have experience in writing
-
-
-				Here is what a client has said about my past work:
-				"Zach was great! He was prompt to answer any messages and very patient when I had delays. I'd definitely hire him again!" - Friendemic
-
-				I have B.S. in Mechanical Engineering and a Master’s in Business Administration. I have extensive work experience including three different internships throughout my college career. I am a passionate problem solver willing to take on complex challenges.
-
-				As an intern, I took on the responsibility of leading a project in which I conducted an energy audit for an office building. I also started a project on my own in which I wrote an instruction manual for how to update CAD drawings that employees could use as a reference in the future. Throughout my internships, I learned to work with customers, contractors, and fellow employees to meet the engineering and financial goals of several projects.
-
-				If you need to have a simple, yet elegant website built for you or you need a clear and concise technical piece written, I am the guy for the job. Let me know what you need and we can talk.
-
-				Thank you,
-				Zach T.
+				<br /><br />
+				With regards to writing experience, I have written instruction manuals for how to update
+				CAD drawings efficiently on the MicroStation platform. I have also written a market
+				research and product development plan for a company pertaining to their future product
+				review website. Currently I am working on a product documentation project for a social
+				media management platform. Also, be sure to explore my <a href="blog.html">blog</a> in which I write
+				about various tech subjects and living in Milwaukee!
+				<br /><br />
+				<b>Here is what clients have said about my past work:</b><br />
+				"Zach was great! He was prompt to answer any messages and very patient when I had delays.
+				I'd definitely hire him again!" - <i>Friendemic</i>
+				<br /><br />
+				"[Zach] did great job and always was around when [we] needed him." - <i>RMF Marine Services</i>
+				<br /><br />
+				<b>Current Rate:</b> $18.00/hour
+				<br /><br />
+				If you need to have a simple, yet elegant website built for you or you need a clear and
+				concise technical piece written, I am the guy for the job!
 				</p>
 			</div>
 
@@ -113,16 +114,47 @@
 	<h1 id="intro-title" class="text-center00">Portfolio<!--hr--></h1>
   </div>
   <div class="row" style="padding: 20px">
-    <!--div class="col-lg-6">
-      <a href = "https://codepen.io/zbthompson93/full/qmewWL/" target="_blank">
-    		<img src="images/atmosphere-tribute.jpg" class= "img-responsive" id = "portImage">
+
+		<div class="col-lg-6">
+			<a href = "http://www.rmfmarine.com/" target="_blank">
+				<img src="images/rmf-marine-img.jpg" class= "img-responsive" id = "portImage">
+	 		</a>
+			<div id = "caption" class = "text-center">
+				<h4 class="caption-header">RMF Marine Services Website</h4>
+				<p style="color: white">Recreated a multipage website for a company called RMF Marine Services. Updated the site and made it mobile responsive.</p>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+			<a href = "https://zbthompson93.github.io/calculator/" target="_blank">
+				<img src="images/calculator.jpg" class= "img-responsive" id = "portImage">
+	 		</a>
+			<div id = "caption" class = "text-center">
+				<h4 class="caption-header">JavaScript Calculator</h4>
+				<p style="color: white">A simple calculator coded with pure JavaScript. Performs basic functions such as
+				addition, subtraction, multiplication, and division.</p>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+			<a href = "https://play.google.com/store/apps/details?id=com.the_snack_calculator.app" target="_blank">
+				<img src="images/calculator-app-google-play-store.jpg" class= "img-responsive" id = "portImage">
+	 		</a>
+			<div id = "caption" class = "text-center">
+				<h4 class="caption-header">Calculator App</h4>
+				<p style="color: white">A simple calculator app used for addition, subtraction, multiplication, and division. Available on the Google Play Store.</p>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+      <a href = "https://zbthompson93.github.io/wikipedia-article-viewer/" target="_blank">
+    		<img src="images/wikipedia-article-viewer.jpg" class= "img-responsive" id = "portImage">
      	</a>
-    	<div id = "caption" class = "text-center">
-          <h4 class="caption-header">Atmosphere Tribute Page</h4>
-		  		<p style="color: white">A basic webpage built with HTML and CSS
-		  		that pays tribute to an artist.</p>
+      <div id = "caption" class = "text-center">
+          <h4 class="caption-header">Wikipedia Article Viewer</h4>
+		  		<p style="color: white">A webpage that allows the user to search for Wikipedia articles or generate random ones.</p>
       </div>
-    </div-->
+    </div>
 
     <div class="col-lg-6">
       <a href = "https://zbthompson93.github.io/random-quote-machine/" target="_blank">
@@ -146,49 +178,6 @@
       </div>
     </div>
 
-    <div class="col-lg-6">
-      <a href = "https://zbthompson93.github.io/wikipedia-article-viewer/" target="_blank">
-    		<img src="images/wikipedia-article-viewer.jpg" class= "img-responsive" id = "portImage">
-     	</a>
-      <div id = "caption" class = "text-center">
-          <h4 class="caption-header">Wikipedia Article Viewer</h4>
-		  		<p style="color: white">A webpage that allows the user to search for Wikipedia articles or generate random ones.</p>
-      </div>
-    </div>
-
-		<div class="col-lg-6">
-			<a href = "https://zbthompson93.github.io/calculator/" target="_blank">
-				<img src="images/calculator.jpg" class= "img-responsive" id = "portImage">
-	 		</a>
-			<div id = "caption" class = "text-center">
-				<h4 class="caption-header">JavaScript Calculator</h4>
-				<p style="color: white">A simple calculator coded with pure JavaScript. Performs basic functions such as
-				addition, subtraction, multiplication, and division.</p>
-			</div>
-		</div>
-
-	<!--/div--->
-
-		<div class="col-lg-6">
-			<a href = "http://www.rmfmarine.com/" target="_blank">
-				<img src="images/rmf-marine-img.jpg" class= "img-responsive" id = "portImage">
-	 		</a>
-			<div id = "caption" class = "text-center">
-				<h4 class="caption-header">RMF Marine Services Website</h4>
-				<p style="color: white">Recreated a multipage website for a company called RMF Marine Services. Updated the site and made it mobile responsive.</p>
-			</div>
-		</div>
-
-		<div class="col-lg-6">
-			<a href = "https://play.google.com/store/apps/details?id=com.the_snack_calculator.app" target="_blank">
-				<img src="images/calculator-app-google-play-store.jpg" class= "img-responsive" id = "portImage">
-	 		</a>
-			<div id = "caption" class = "text-center">
-				<h4 class="caption-header">Calculator App</h4>
-				<p style="color: white">A simple calculator app used for addition, subtraction, multiplication, and division. Available on the Google Play Store.</p>
-			</div>
-		</div>
-
 	</div>
 
   </div>
@@ -199,112 +188,90 @@
 <hr class="section-divider">
 
 <div class="row" id="resume">
-<div class="col-sm-1"></div>
-<div class="container purp-background1 col-sm-10">
-	<div>
-		<h1 id="intro-title" class="text-center00">Resume</h1>
-	</div>
-	<div>
-		<hr>
-		<h2 class="resume-headers info-button">EDUCATION</h2>
-		<div class="information">
-		<h3>The University of New Mexico:</h3>
-		<h4>Master of Business Administration - July 2017</h4>
-		<ul>
-			<li>GPA: 3.94</li>
-			<li>Group Project: Created a market research and product development plan for a local company in Santa Fe, NM pertaining to their future product review website.</li>
-		</ul>
-		<br>
-		<h4>Bachelor of Science in Mechanical Engineering - December 2016</h4>
-		<ul>
-			<li>GPA: 3.62</li>
-			<li>Group Project: Worked with a team to design and construct a transport vehicle intended to carry heavy loads across all terrains.  Created for use in the landscaping and construction fields.</li>
-			<li>This degree included classes focused on using computer programming to solve engineering problems.</li>
-		</ul>
-		<br>
-		<h3>freeCodeCamp:</h3>
-		<h4>Front-End Web Development - In Progress</h4>
-		<ul>
-			<li>Learning to develop web pages using HTML, CSS, JavaScript, Bootstrap, and jQuery. Developed several responsive web pages on CodePen.</li>
-		</ul>
+	<div class="col-sm-1"></div>
+	<div class="container purp-background1 col-sm-10">
+		<div>
+			<h1 id="intro-title" class="text-center00">Resume</h1>
 		</div>
-		<hr>
-	</div>
-	<div>
-		<h2 class="resume-headers info-button">EXPERIENCE</h2>
-		<div class="information">
-		<h3>Freelance Web Developer - Albuquerque, NM: Present</h3>
-		<h4>Upwork/GitHub Projects</h4>
-		<ul>
-			<li>Converted data from an Excel file into an HTML format.</li>
-			<li>Created a web page that the user can generate random famous quotes from an API source and tweet these quotes. Uses JavaScript/jQuery to perform these functions.</li>
-			<li>Created a web page that gathers local weather information from an API source and posts the current outside temperature. Uses JavaScript/jQuery to convert the temperature from Fahrenheit to Celsius and to change the background photo based on the temperature.</li>
-			<li>Created a web page that searches Wikipedia articles in which the user can select the article and go to its source page. The user can also generate random articles as well. Uses JavaScript/jQuery to perform these functions.</li>
-		</ul>
-		<br>
-		<h3>Engineering Intern - Albuquerque, NM: 2016-2017</h3>
-		<h4>Sandia National Labs</h4>
-		<ul>
-			<li>Project lead on a 4-year energy audit for an office building, which entailed interviewing building operators, investigating energy consumption, and updating facilities data.</li>
-			<li>Developed a self-initiated instruction manual for updating CAD drawings.</li>
-			<li>Created a guidance document that informed customers on how to deal with temperature disparity issues.</li>
-			<li>Assisted in weekly budget review analysis using pivot tables.</li>
-			<li>Requested service orders from outside contractors to resolve HVAC-based issues.</li>
-		</ul>
-		<br>
-		<h3>Engineering Intern - Albuquerque, NM: 2016</h3>
-		<h4>Tempur-Sealy International</h4>
-		<ul>
-			<li>Aided in the analysis of the company's existing mattress-building machinery.</li>
-			<li>Researched future options for buying and installing new machines.</li>
-		</ul>
-		<h3>Engineering Intern - Albuquerque, NM: 2015</h3>
-		<h4>Fiore Industries, Inc.</h4>
-		<ul>
-			<li>Designed and manufactured parts of a prosthetic arm using CAD and a 3D printer.</li>
-			<li>Analyzed the heat transfer of a cooling system for a large antenna using COMSOL Multiphysics.</li>
-		</ul>
-		</div>
-		<hr>
-	</div>
-	<div>
-		<h2 class="resume-headers info-button">HONORS/AWARDS</h2>
-		<div class="information">
-		<ul>
-			<li>Presidential Scholar, University of New Mexico</li>
-			<li>Dean's List, University of New Mexico</li>
-		</ul>
-		</div>
-		<hr>
-	</div>
-	<div>
-		<h2 class="resume-headers info-button">TECHNICAL SKILLS</h2>
-		<div class="information row">
-			<div class="col-sm-3">
-			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Bootstrap JS</li>
-				<li>React JS</li>
-			</ul>
+		<div>
+			<hr>
+			<h2 class="resume-headers info-button">EXPERIENCE</h2>
+			<div class="information">
+				<br>
+				<h3>Freelance Web Developer - Milwaukee, WI: 2017 - Present</h3>
+				<h4>Self Employed</h4>
+				<ul>
+					<li>Recreated a multipage website for a boat repair company using HTML, CSS, and JavaScript. Updated the page format and made the website mobile responsive. Link: http://rmfmarine.com/</li>
+					<li>Gathered client data from a spreadsheet and converted it to an HTML table format for a SaaS company.</li>
+				</ul>
+				<br>
+				<h3>Web Developer - Milwaukee, WI: 2017 - Present</h3>
+				<h4>PartsBadger LLC</h4>
+				<ul>
+					<li>Created a custom function that updates shipment notifications sent to customers.</li>
+					<li>Updated a sales quote creating tool by automatically propagating vital information from
+						an existing account. Also created a function that generates the title of a quote based on
+						the order number and the current date.</li>
+					<li>Created a button that propagates customer address information from one section of a database to another.</li>
+					<li>Created a function that gathers shipping information from a sales order and propagates it to an account.</li>
+					<li>Created a custom sales order title that automatically generates upon the order's creation.</li>
+				</ul>
+				<br>
+				<h3>Engineering Intern - Albuquerque, NM: 2016-2017</h3>
+				<h4>Sandia National Labs</h4>
+				<ul>
+					<li>Project lead on a 4-year energy audit for an office building, which entailed interviewing building operators, investigating energy consumption, and updating facilities data.</li>
+					<li>Developed a self-initiated instruction manual for updating CAD drawings.</li>
+					<li>Created a guidance document that informed customers on how to deal with temperature disparity issues.</li>
+					<li>Assisted in weekly budget review analysis using pivot tables.</li>
+					<li>Requested service orders from outside contractors to resolve HVAC-based issues.</li>
+				</ul>
 			</div>
-			<div class="col-sm-3">
-			<ul>
-				<li>Python</li>
-				<li>Git/GitHub</li>
-				<li>Microsoft Word</li>
-				<li>Microsoft Powerpoint</li>
-				<li>Microsoft Excel</li>
-			</ul>
-			</div>
+			<hr>
 		</div>
-		<hr>
-		  <h4 class="text-center"><a class="resume-link" href="files/zachary-thompson-resume-2017.pdf" target="_blank">Download a PDF version here</a></h4>
+		<div>
+			<h2 class="resume-headers info-button">EDUCATION</h2>
+				<div class="information">
+					<h3>The University of New Mexico:</h3>
+					<h4>Master of Business Administration - July 2017</h4>
+					<ul>
+						<li>GPA: 3.94</li>
+					</ul>
+					<br>
+					<h4>Bachelor of Science in Mechanical Engineering - December 2016</h4>
+					<ul>
+						<li>GPA: 3.62</li>
+					</ul>
+				</div>
+			<hr>
+		</div>
+		<div>
+			<h2 class="resume-headers info-button">TECHNICAL SKILLS</h2>
+			<div class="information row">
+				<div class="col-sm-3">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Bootstrap JS</li>
+						<li>React JS</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul>
+						<li>Python</li>
+						<li>Git/GitHub</li>
+						<li>Microsoft Word</li>
+						<li>Microsoft Powerpoint</li>
+						<li>Microsoft Excel</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
 	</div>
-</div>
-<div class="col-sm-1"></div>
+	<div class="col-sm-1"></div>
 </div>
 
 

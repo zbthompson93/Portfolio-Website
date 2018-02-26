@@ -43,7 +43,7 @@ body {
 
 .header-text {
 	position: relative;
-  top: 30%;
+  top: 15%;
 }
 
 .head-title-1 {
@@ -163,7 +163,7 @@ body {
 #intro-para {
   font-size: 130%;
   float: left;
-  padding: 10px 0px 0px 30px;
+  padding: 10px 0px 0px 20px;
 }
 #intro-title{
   color: rgb(138, 43, 226); /*rgb(153,70,255); /*cyan;*/
@@ -179,9 +179,10 @@ body {
   border-radius: 50%;
   box-shadow: 4px 4px 4px #333;
   margin: 10px;
-  max-width: 170px;
+  /*max-width: 170px;*/
+  max-width: 140px;
   min-width: 90px;
-  float: left;
+  /*float: left;*/
 }
 .purp-background1 {
   background-color: #F5F5F5 /* #333; /*rgb(153,70,255);*/
@@ -228,7 +229,8 @@ body {
 /* Resume Section */
 .resume-headers {
 	font-family: Acme;
-	color: rgb(138, 43, 226); /*cyan;*/
+	/*color: rgb(138, 43, 226); /*cyan;*/*/
+  color: #333;
 	cursor: pointer;
 }
 
@@ -243,7 +245,8 @@ hr {
 }
 
 .info-button:hover {
-	color: #333;
+	/*color: #333;*/
+  color: rgb(138, 43, 226);
 }
 
 .resume-link {
