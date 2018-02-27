@@ -78,10 +78,10 @@ body {
   background-color: /*rgb(138, 43, 226); rgb(153,70,255);*/ #333;
   width: 100%;
 }
-
+/*
 .nav li {
   float: left;
-}
+}*/
 
 .nav li a {
   display: block;
