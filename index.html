@@ -28,7 +28,7 @@
         <li style="float: left;"><a href="#portfolio">Portfolio</a></li>
         <li style="float: left;"><a href="#resume">Resume</a></li>
         <li style="float: left;"><a href="#contact-section">Contact</a></li>
-				<li style="float: left;"><a href="https://www.zbthompson.com/blog">Blog</a></li>
+				<li style="float: left;"><a href="https://www.zbthompson.com/blog" target="_blank">Blog</a></li>
       </ul>
 		</div>
 
@@ -38,7 +38,7 @@
         <li><a href="#portfolio" onclick="revealMenu()">Portfolio</a></li>
         <li><a href="#resume" onclick="revealMenu()">Resume</a></li>
         <li><a href="#contact-section" onclick="revealMenu()">Contact</a></li>
-				<li><a href="https://www.zbthompson.com/blog" onclick="revealMenu()">Blog</a></li>
+				<li><a href="https://www.zbthompson.com/blog" onclick="revealMenu()" target="_blank">Blog</a></li>
       </ul>
 		</div>
 
@@ -111,9 +111,21 @@
 <div class="col-sm-1"></div>
 <div class="container purp-background1 col-sm-10">
   <div>
-	<h1 id="intro-title" class="text-center00">Portfolio<!--hr--></h1>
+	<h1 id="intro-title">Portfolio<!--hr--></h1>
   </div>
-  <div class="row" style="padding: 20px">
+
+	<h2 id="port-sub-title">Client Projects:<hr></h2>
+  <div class="row" style="padding-left: 20px">
+
+		<div class="col-lg-6">
+			<a href = "http://www.pewaukeetreecare.com/" target="_blank">
+				<img src="images/pewaukee-tree-care.jpg" class= "img-responsive" id = "portImage">
+	 		</a>
+			<div id = "caption" class = "text-center">
+				<h4 class="caption-header">Pewaukee Tree Care Website</h4>
+				<p style="color: white">Built a website for a local tree service company using the Divi builder in WordPress.</p>
+			</div>
+		</div>
 
 		<div class="col-lg-6">
 			<a href = "http://www.rmfmarine.com/" target="_blank">
@@ -124,6 +136,13 @@
 				<p style="color: white">Recreated a multipage website for a company called RMF Marine Services. Updated the site and made it mobile responsive.</p>
 			</div>
 		</div>
+
+	</div>
+
+	<div style="margin-top: 20px"></div>
+
+	<h2 id="port-sub-title">Personal Projects:<hr></h2>
+	<div class="row" style="padding-left: 20px">
 
 		<div class="col-lg-6">
 			<a href = "https://zbthompson93.github.io/calculator/" target="_blank">
@@ -197,24 +216,27 @@
 			<hr>
 			<h2 class="resume-headers info-button">EXPERIENCE</h2>
 			<div class="information">
+				<h3>Freelance Web Developer - Milwaukee, WI: 2017 - Present</h3>
+				<h4>Self Employed</h4>
+				<ul>
+					<li>Built a website for a local tree service company using the Divi builder in WordPress. Made the website mobile responsive and user-friendly.</li>
+					<li>Recreated a multipage website for a boat repair company using HTML, CSS, and JavaScript. Updated the page format and made the website mobile responsive.</li>
+					<li>Gathered client data from a spreadsheet and converted it to an HTML table format for a SaaS company.</li>
+				</ul>
 				<br>
 				<h3>Web Developer - Milwaukee, WI: 2018 - Present</h3>
 				<h4>PartsBadger LLC</h4>
 				<ul>
-					<li>Created a custom function that updates shipment notifications sent to customers.</li>
-					<li>Updated a sales quote creating tool by automatically propagating vital information from
-						an existing account. Also created a function that generates the title of a quote based on
-						the order number and the current date.</li>
-					<li>Created a button that propagates customer address information from one section of a database to another.</li>
-					<li>Created a function that gathers shipping information from a sales order and propagates it to an account.</li>
-					<li>Created a custom sales order title that automatically generates upon the order's creation.</li>
-				</ul>
-				<br>
-				<h3>Freelance Web Developer - Milwaukee, WI: 2017 - Present</h3>
-				<h4>Self Employed</h4>
-				<ul>
-					<li>Recreated a multipage website for a boat repair company using HTML, CSS, and JavaScript. Updated the page format and made the website mobile responsive. Link: http://rmfmarine.com/</li>
-					<li>Gathered client data from a spreadsheet and converted it to an HTML table format for a SaaS company.</li>
+					<li>Built a REST API from scratch that connects to a CRM application (Zoho CRM) using Node JS and React JS.</li>
+					<li>Improved the efficiency of an existing CRM (Zoho) in the following ways:</li>
+							<ul>
+								<li>Created a custom function that automatically sends shipment notifications to customers.
+									This notification grabs tracking numbers and generates URLs in which the customer can track their packages.</li>
+								<li>Improved the quote creation tool by propagating necessary information from the CRM to input fields in the tool.</li>
+								<li>Wrote a function that automatically generates a custom sales order name based on information from the sales order.</li>
+							</ul>
+					<li>Created a custom button for a CAD program that invokes a function used for measuring an object in a drawing. Function was
+						written in Python.</li>
 				</ul>
 				<br>
 				<h3>Engineering Intern - Albuquerque, NM: 2016-2017</h3>
@@ -260,7 +282,7 @@
 				</div>
 				<div class="col-sm-3">
 					<ul>
-						<li>Python</li>
+						<li>WordPress</li>
 						<li>Git/GitHub</li>
 						<li>Microsoft Word</li>
 						<li>Microsoft Powerpoint</li>
@@ -281,9 +303,9 @@
 		   <ul class="profile-links">
 				 <li><a href="mailto:zbthompson93@gmail.com" class="fa fa-envelope"></a>&nbsp;</li>
 				 <li><a href="https://www.linkedin.com/in/zachary-thompson-2237b1106/" class="fa fa-linkedin" target="_blank"></a>&nbsp;</li>
+				 <li><a href="https://twitter.com/TheSnackZ30" class="fa fa-twitter" target="_blank"></a>&nbsp;</li>
+				 <li><a href="https://www.instagram.com/zacharythompson30/" class="fa fa-instagram" target="_blank"></a>&nbsp;</li>
 				 <li><a href="https://github.com/zbthompson93" class="fa fa-github" target="_blank"></a>&nbsp;</li>
-				 <li><a href="https://codepen.io/zbthompson93/" class="fa fa-codepen" target="_blank"></a>&nbsp;</li>
-				 <li><a href="https://www.freecodecamp.org/zbthompson93" class="fa fa-free-code-camp" target="_blank"></a>&nbsp;</li>
 		   </ul>
 	   </div>
 </div>
